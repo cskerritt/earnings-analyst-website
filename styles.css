@@ -258,25 +258,26 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Issues Section */
-.issues {
+/* Volumes Section */
+.volumes {
     padding: 80px 20px;
 }
 
-.issues h2 {
+.volumes h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: #2c3e50;
 }
 
-.issues-grid {
+.volumes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
+    margin-bottom: 3rem;
 }
 
-.issue-card {
+.volume-card {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -284,50 +285,181 @@ body {
     transition: transform 0.3s ease;
 }
 
-.issue-card:hover {
+.volume-card:hover {
     transform: translateY(-5px);
 }
 
-.issue-cover {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
+.volume-cover {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
     color: white;
     padding: 2rem;
     text-align: center;
 }
 
-.issue-cover h3 {
+.volume-cover h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
-.issue-date {
-    opacity: 0.8;
+.volume-date {
+    opacity: 0.9;
+    font-size: 1rem;
 }
 
-.issue-content {
+.volume-content {
     padding: 2rem;
 }
 
-.issue-content h4 {
+.volume-content h4 {
     color: #2c3e50;
     margin-bottom: 1rem;
+    font-size: 1.3rem;
 }
 
-.issue-actions {
+.volume-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.volume-highlights {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.volume-highlights h5 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.volume-highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.volume-highlights li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 0.95rem;
+}
+
+.volume-highlights li:last-child {
+    border-bottom: none;
+}
+
+.volume-actions {
     display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
 }
 
-.issue-actions .btn {
+.volume-actions .btn {
     flex: 1;
     text-align: center;
+}
+
+.volume-archive {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.volume-archive h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Submissions Section */
+.submissions {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.submissions h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.submissions-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.guidelines h3,
+.submission-process h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.guidelines h4,
+.submission-process h4 {
+    color: #2c3e50;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.guidelines ul,
+.submission-process ul {
+    margin-bottom: 1.5rem;
+}
+
+.guidelines li,
+.submission-process li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.process-steps {
+    margin: 2rem 0;
+}
+
+.step {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.step h4 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.submission-action {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+.submission-action h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.submission-action .btn {
+    margin: 0.5rem;
 }
 
 /* Subscribe Section */
 .subscribe {
     padding: 80px 20px;
-    background: #f8f9fa;
 }
 
 .subscribe h2 {
@@ -401,6 +533,143 @@ body {
     border-bottom: 1px solid #ecf0f1;
 }
 
+.subscription-benefits {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.subscription-benefits h3 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.benefit {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.benefit h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Editorial Section */
+.editorial {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.editorial h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.editorial-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.editors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.editor-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.editor-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.editor {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.editor:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.editor h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.affiliation {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.expertise {
+    color: #34495e;
+    font-size: 0.95rem;
+}
+
+.editorial-mission {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.editorial-mission h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.editorial-mission h4 {
+    color: #2c3e50;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.editorial-mission ul {
+    list-style: none;
+    padding: 0;
+}
+
+.editorial-mission li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.editorial-mission li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
+
 /* Library Section */
 .library {
     padding: 80px 20px;
@@ -447,12 +716,59 @@ body {
     outline: none;
 }
 
-.forgot-password {
+.login-links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login-links a {
     color: #3498db;
     text-decoration: none;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+.archive-stats {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.archive-stats h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
     text-align: center;
-    display: block;
-    margin-top: 1rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat .number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3498db;
+    line-height: 1;
+}
+
+.stat .label {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 0.25rem;
 }
 
 .library-features h3 {
@@ -576,8 +892,38 @@ footer {
 .footer-bottom {
     border-top: 1px solid #34495e;
     padding-top: 2rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #bdc3c7;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-legal {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.legal-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.legal-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.legal-links a:hover {
+    color: #3498db;
+}
+
+.footer-issn {
+    font-size: 0.9rem;
+    color: #95a5a6;
 }
 
 /* Responsive Design */
@@ -635,12 +981,33 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .issues-grid {
+    .volumes-grid {
         grid-template-columns: 1fr;
     }
     
     .pricing-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .submissions-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .editors-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .legal-links {
+        justify-content: center;
     }
     
     .hero {
